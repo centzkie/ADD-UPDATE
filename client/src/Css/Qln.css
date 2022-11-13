@@ -1,0 +1,96 @@
+.qln .headings {
+  width: 100%;
+  height: 5vh;
+  background-color: #800000;
+}
+.qln .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 95vh;
+  width: 100%;
+}
+.qln .content .head {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 20px;
+}
+.qln .content .note {
+  text-align: center;
+  padding: 20px 0;
+}
+.qln .content .note > div {
+  padding: 5px 0;
+}
+.qln .content .note .thankyou {
+  font-size: 2rem;
+}
+.qln .content .note .screenshot {
+  font-size: 1.3rem;
+}
+.qln .content .queueLineNumber h1 {
+  font-size: 8rem;
+  padding: 10px;
+}
+.qln .content .buttons > button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background-color: #800000;
+  color: white;
+  border: none;
+  width: 200px;
+}
+
+@media only screen and (351px<= width <= 746px) {
+  .qln .content .head {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  .qln .content .note {
+    padding: 10px 10px;
+  }
+  .qln .content .note .thankyou {
+    font-size: 1.2rem;
+  }
+  .qln .content .note .screenshot {
+    font-size: 1.2rem;
+  }
+  .qln .content .queueLineNumber h1 {
+    font-size: 6rem;
+    padding: 5px;
+  }
+  .qln .content .buttons > button {
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    width: 150px;
+  }
+}
+
+@media only screen and (320px <= width <= 350px) {
+  .qln .content .head {
+    font-size: 1rem;
+  }
+  .qln .content .note {
+    padding: 10px 10px;
+  }
+  .qln .content .note .thankyou {
+    font-size: 0.8rem;
+  }
+  .qln .content .note .screenshot {
+    font-size: 1rem;
+  }
+  .qln .content .queueLineNumber h1 {
+    font-size: 4rem;
+    padding: 3px;
+  }
+  .qln .content .buttons > button {
+    padding: 8px 20px;
+    font-size: 1rem;
+    width: 100px;
+  }
+}

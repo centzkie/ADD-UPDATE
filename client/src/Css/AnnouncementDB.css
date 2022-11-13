@@ -1,0 +1,71 @@
+.Announcement-content {
+  display: flex;
+}
+
+.Announcement-content .mainContent {
+  /* padding: 20px; */
+  height: 100vh;
+  width: 100%;
+}
+.Announcement-content .mainContent .title {
+  padding: 20px;
+}
+.Announcement-content .mainContent .form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.Announcement-content .mainContent .txtAnnouncement {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.Announcement-content .mainContent .txtAnnouncement:focus {
+  outline: none !important;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #800000;
+}
+
+.Announcement-content .mainContent .form .btnAnnounce {
+  padding: 20px 2px;
+}
+.Announcement-content .mainContent .form .btnAnnounce button {
+  padding: 10px 40px;
+  background-color: #800000;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.Announcement-content .mainContent .form .btnAnnounce button:hover {
+  background-color: #a70000;
+}
+
+.txtAnnouncement {
+  /* resize: none; */
+  height: 100px;
+  width: 700px;
+}
+
+.Announcement-content .sign-outbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  font-size: 3rem;
+  color: white;
+  background-color: #800000;
+  border-radius: 80px;
+}
+.Announcement-content .sign-outbtn:hover {
+  cursor: pointer;
+}

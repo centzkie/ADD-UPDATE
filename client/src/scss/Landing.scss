@@ -1,0 +1,135 @@
+@use "./util/var.scss" as a;
+@use "./mixins/var.scss" as b;
+.landing {
+  .wrapper {
+    .access {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+
+      .admin {
+        position: sticky;
+        font-size: 3rem;
+        color: a.$primaryColor;
+        &:hover {
+          color: a.$primaryHover;
+        }
+      }
+    }
+
+    .content {
+      @include b.flexCenter;
+      flex-wrap: wrap;
+      height: 85vh;
+      width: 100%;
+      .card {
+        position: absolute;
+        @include b.flexCenter;
+        flex-direction: column;
+        padding: 25px;
+        height: 50%;
+        width: 50%;
+        border-radius: 15px;
+        background-color: a.$primaryBackground;
+        box-shadow: 7.7px 9.7px 12.2px a.$primaryShadow,
+          15px 19px 25px a.$primaryShadow;
+
+        .elements {
+          position: relative;
+          width: 100%;
+          h1 {
+            @include b.flexCenter;
+          }
+          .buttons {
+            @include b.flexCenter;
+            flex-direction: column;
+            padding: 30px 0;
+            gap: 20px;
+
+            > div {
+              @include b.flexCenter;
+              height: inherit;
+              width: 80%;
+              > button {
+                border: none;
+                font-weight: 300;
+                font-size: 1.4rem;
+                border-radius: 15px;
+                padding: 10px 15px;
+                width: inherit;
+                background-color: a.$primaryColor;
+                color: white;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      // .buttons {
+      //   position: relative;
+
+      //   display: flex;
+      //   align-items: center;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   height: 400px;
+      //   padding: 50px;
+      //   border-radius: 15px;
+      //   background-color: a.$primaryBackground;
+      //   box-shadow: 7.7px 9.7px 12.2px a.$primaryShadow,
+      //     15px 19px 25px a.$primaryShadow;
+
+      //   gap: 20px;
+      //   > button {
+      //     justify-content: center;
+      //     display: flex;
+      //
+      //     border: none;
+      //     font-weight: 300;
+      //     font-size: 1.4rem;
+      //     border-radius: 15px;
+      //
+      //     background-color: a.$primaryColor;
+      //     color: white;
+      //     cursor: pointer;
+      //     &:hover {
+      //       background-color: a.$primaryHover;
+      //     }
+      //   }
+      //   .floatingLogo {
+      //     position: absolute;
+      //     top: 0;
+      //     left: 50%;
+      //     transform: translate(-50%, -50%);
+      //     img {
+      //       height: 100px;
+      //       width: 100px;
+      //     }
+      //   }
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     top: -60px;
+      //     height: 120px;
+      //     width: 120px;
+      //     border-radius: 60px;
+      //     background: a.$white;
+      //   }
+      // }
+    }
+    .tables {
+      height: 100vh;
+    }
+  }
+  .tables {
+    background: a.$primaryBackground;
+    h2 {
+      margin: 10px 0;
+      padding: 10px 20px;
+      text-align: center;
+      color: a.$secondaryColor;
+      background-color: a.$primaryBackground;
+    }
+  }
+}
